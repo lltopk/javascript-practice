@@ -19,6 +19,6 @@ const obj2 = {
 };
 
 obj1.logSimple.call(obj2); //方法借用后, 内部this指向新的对象obj2，输出 ‘Obj2’
-obj1.logfunctional.call(obj2);     //方法借用后, 外部this借用无效， 仍是 outerThis，不是 obj2
+obj1.logfunctional.call(obj2);     //方法借用后, 外部this仍然指向其箭头函数初始定义时的外部this(outerThis), 借用无效，不是 obj2
 
 
