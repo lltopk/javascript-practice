@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@types/node": "^24.6.2"
+  },
+  "dependencies": {
+    "@zurmokeeper/exceljs": "^4.4.9"
+  }
+}
