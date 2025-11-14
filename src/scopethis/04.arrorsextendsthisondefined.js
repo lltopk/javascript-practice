@@ -1,3 +1,6 @@
+//箭头函数的 this 继承自其定义时的外部作用域，而不是调用时的对象.  
+//因此调用时无法改变箭头函数既有的this指向
+
 const outerThis = this; // 假设是 window 或 undefined
 
 const obj1 = {
