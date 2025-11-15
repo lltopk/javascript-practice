@@ -1,3 +1,10 @@
+//请注意，JavaScript 的本质上是单线程的，因此在任何时刻，只有一个任务会被执行，
+// 只是控制权可以在不同的 Promise 之间切换，从而看起来像是新的线程承载了Promise任务一样. 但属于异步不假
+//  这是JavaScript与Java等多线程语言的一个重要区别。
+
+
+
+
 // resolve and reject are functions provided by JavaScript engine
 let promise1 = new Promise(function(resolve, reject) {
     // executor (the producing code, "singer")
