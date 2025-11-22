@@ -3,8 +3,13 @@ let promise = new Promise((resolve, reject)=> {
   // 当 promise 被构造完成时，自动执行此函数,并带有结果 "done"
   setTimeout(() => resolve("done"), 1000);
 });
-//立刻打印, promise尚且没有执行完, 状态为pending
-console.log(promise); // Promise {<pending>}
+//立刻打印, promise尚且没有执行完, 状态为pending, 结果为undefined
+if(promise){
+  console.log("console1 pending:",promise)
+}
 // 1秒后，promise 状态变为 "fulfilled"，结果变为 "done"
-setTimeout(() => console.log(promise), 2000); // Promise {<fulfilled>: "done"}
+setTimeout(() => console.log('console3 fulfilled:',promise), 2000); // Promise {<fulfilled>: "done"}
+if(promise){
+  console.log("console2 pending:",promise)
+}
 
