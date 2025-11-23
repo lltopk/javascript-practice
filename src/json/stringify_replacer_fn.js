@@ -19,9 +19,9 @@ const products = [
 for (let index = 0; index < products.length; index++) {
     const element = products[index];
     console.log("商品 " + index + ": " + JSON.stringify(element, (key, value) => {
-        console.log(index + ":JSON.stringify#replacer this",this)//箭头函数没有自己的this
-        console.log(index + ":JSON.stringify#replacer key",key)
-        console.log(index + ":JSON.stringify#replacer value",value)
+        console.log(index + "this:JSON.stringify#replacer this",this)//箭头函数没有自己的this
+        console.log(index + "key:JSON.stringify#replacer key",key)
+        console.log(index + "value:JSON.stringify#replacer value",value)
         if (key === 'id' && value <= 1) {
             return undefined  // 仅仅过滤掉 id <= 1的对象的id键
         }
@@ -34,9 +34,9 @@ for (let index = 0; index < products.length; index++) {
 for (let index = 0; index < products.length; index++) {
     const element = products[index];
     console.log("商品 " + index + ": " + JSON.stringify(element, function(key, value)  {
-        console.log(index +":JSON.stringify#replacer this",this)//普通函数有自己的this
-        console.log(index + ":JSON.stringify#replacer key",key)
-        console.log(index + ":JSON.stringify#replacer value",value)
+        console.log(index +"this:JSON.stringify#replacer this",this)//普通函数有自己的this
+        console.log(index + "key:JSON.stringify#replacer key",key)
+        console.log(index + "value:JSON.stringify#replacer value",value)
         if (key === 'id' && value <= 1) {
             return undefined  // 仅仅过滤掉 id <= 1的对象的id键
         }
