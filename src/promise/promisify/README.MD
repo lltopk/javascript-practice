@@ -1,0 +1,1 @@
+在 Node.js 中，有一个内建的 promise 化函数 util.promisify
