@@ -5,7 +5,8 @@
 
 
 
-// resolve and reject are functions provided by JavaScript engine
+// 创建语法, Promise接收一个回调函数function(resolve, reject) be call by JavaScript engine
+// 这个回调函数带有两个参数, 这两个参数将在被回调的时候, 实际值由JavaScript引擎知道
 let promise1 = new Promise(function(resolve, reject) {
     // executor (the producing code, "singer")
     // tips: must execute the resolve or reject function once
