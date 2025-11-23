@@ -26,7 +26,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${file}"
+            "program": "${file}",
+            "console": "integratedTerminal" // 添加此行, No debugger available, can not send 'variables'
         }
     ]
 }

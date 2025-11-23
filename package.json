@@ -1,4 +1,7 @@
 {
+  "type": "module",
+  "name": "javascript-practice",
+  "version": "1.0.0",
   "devDependencies": {
     "@types/node": "^24.6.2"
   },

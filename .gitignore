@@ -19,6 +19,7 @@ coverage
 
 # Editor directories and files
 !.vscode/launch.json
+!.vscode/tasks.json
 .idea
 *.suo
 *.ntvs*
