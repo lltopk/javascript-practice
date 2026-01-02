@@ -136,3 +136,18 @@ launch.json 不能直接运行 HTML 文件，只能运行 JS/Node 程序。
 ![task.json](image/html.png)
 
 > 还有一个方式是安装插件 live server, 一键运行html, 无需配置, 但显得不够专业, 个人不喜欢
+
+## vscode-icons
+安装vscode-icons插件
+
+配置settings.json
+
+激活vscode-icons
+```
+"workbench.iconTheme": "vscode-icons",
+```
+可选的配置项
+```
+    
+    "vsicons.presets.foldersAllDefaultIcon": true,
+```
